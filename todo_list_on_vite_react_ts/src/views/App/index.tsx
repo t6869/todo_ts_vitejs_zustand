@@ -1,5 +1,4 @@
-import React from 'react';
-import style from './index.module.scss';
+import React from 'react'; import style from './index.module.scss';
 import { useToDoStore } from '../../data/stores/useToDoStore';
 import { InputPlus } from '../components/InputPlus/InputPlus';
 
@@ -25,7 +24,7 @@ export const App: React.FC = () => {
                     onAdd = {(title)=>{
                         if(title){
                             createTask(title);
-                        }
+                        };
                     }}
                 />
             </section>
