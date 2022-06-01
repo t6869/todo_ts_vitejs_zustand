@@ -20,6 +20,7 @@ export const InputPlus: React.FC<InputPlusProps> = ({ onAdd }) => {
                 className={style.inputPlusValue}
                 type="text"
                 value={inputValue}
+                placeholder="Введи то, что должен сделать..."
                 onChange={(e) =>{
                     setInputValue(e.target.value)
                 }}
