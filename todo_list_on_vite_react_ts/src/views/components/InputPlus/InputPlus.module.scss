@@ -1,7 +1,8 @@
 .inputPlus{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 45px;
+    grid-template-columns: 1fr 60px;
+    margin-bottom: 15px;
 
     &Value{
         padding: 10px 9px;
@@ -9,12 +10,22 @@
         border-radius: 5px 0 0 5px;
         font: 1rem/1.4 'Roboto', sans-serif;
         background: #DBE2EF;  
+
         &::placeholder{
             color: #7B7B7B;
         }
     }
 
     &Button{
+        border-radius: 0 5px 5px 0;
+        border: none;
+        cursor: pointer;
+        background: #3F72AF url(./images/plus.svg) no-repeat center center;
+        
 
+        &:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
     }
 } 
